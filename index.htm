@@ -1,12 +1,18 @@
-﻿<!DOCTYPE html>
+<!doctype html>
+<html>
+<body>
+<script>
+(function(){
+  const injectedHTML = `
+  ﻿<!DOCTYPE html>
 <html>
 <head>
 <!-- external -->
 <script type="text/javascript">
     window.cookieconsent_options = {"message":"Unsurprisingly, this website uses cookies for ads and traffic analysis.","dismiss":"Got it!","learnMore":"Learn more","link":"//orteil.dashnet.org/cookieconsentpolicy.html","target":"_blank","theme":"//orteil.dashnet.org/cookieconsent.css","domain":"dashnet.org"};
-</script>
+<\/script>
 
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"><\/script>
 
 <!--<link href="https://fonts.googleapis.com/css?family=Kavoon&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
 <link href='https://fonts.googleapis.com/css?family=Merriweather:900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -20,7 +26,7 @@
 	document,'script','https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '357399801355203');
 	fbq('track', 'PageView');
-	</script>
+	<\/script>
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=357399801355203&ev=PageView&noscript=1"></noscript>
 <!-- end code -->
@@ -34,26 +40,26 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
 
 <meta name="viewport" content="width=900, initial-scale=1">
 <link rel="shortcut icon" href="img/favicon.ico" />
-<script src="base64.js"></script>
+<script src="base64.js"><\/script>
 
 <script>
 var VERSION=2.052;
 var BETA=0;
 var App=typeof App==='undefined'?0:App;
-</script>
+<\/script>
 
 <link href="style.css?v=9" rel="stylesheet" type="text/css">
-<script  src="main.js?v=10"></script>
+<script  src="main.js?v=10"><\/script>
 
 <!-- ad -->
-<script src="showads.js"></script><!-- this just detects adblockers so we can adjust the layout and play nice -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="showads.js"><\/script><!-- this just detects adblockers so we can adjust the layout and play nice -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({
           google_ad_client: "ca-pub-8491708950677704",
           enable_page_level_ads: true
      });
-</script>
+<\/script>
 <!-- /ad -->
 
 <!--[if IE]>
@@ -62,7 +68,7 @@ var App=typeof App==='undefined'?0:App;
 </style>
 <![endif]-->
 
-<!--[if lt IE9]><script src="excanvas.compiled.js"></script><![endif]-->
+<!--[if lt IE9]><script src="excanvas.compiled.js"><\/script><![endif]-->
 </head>
 <body>
 
@@ -80,7 +86,7 @@ var App=typeof App==='undefined'?0:App;
 		<div><a class="lightblueLink" style="font-weight:bold;" href="https://store.steampowered.com/app/1454400/Cookie_Clicker/" target="_blank" id="topbarSteamCC">Cookie Clicker on Steam</a></div>
 		<div><a href="//orteil.dashnet.org/randomgen/" target="_blank" id="topbarRandomgen">RandomGen</a></div>
 		<div><a href="//orteil.dashnet.org/igm/" target="_blank" id="topbarIGM">Idle Game Maker</a></div>
-		<div style="float:right;position:relative;"><div id="tinyglobe" style="position:absolute;top:-4px;width:22px;height:22px;background:url(img/tinyglobeSheet.gif);right:4px;top:4px;pointer-events:none;"></div><a id="changeLanguage" style="font-variant:small-caps;padding-right:20px;" onmouseover="INTERVAL_TINYGLOBE=setInterval(function(){var tinyglobe=document.getElementById('tinyglobe');tinyglobe.style.backgroundPosition=(parseInt(tinyglobe.style.backgroundPosition)-22)+'px';},30);" onmouseout="clearInterval(INTERVAL_TINYGLOBE);">Change language</a><script>document.getElementById('tinyglobe').style.backgroundPosition=(-[0,19,27][Math.floor(Math.random()*3)]*22)+'px';</script></div>
+		<div style="float:right;position:relative;"><div id="tinyglobe" style="position:absolute;top:-4px;width:22px;height:22px;background:url(img/tinyglobeSheet.gif);right:4px;top:4px;pointer-events:none;"></div><a id="changeLanguage" style="font-variant:small-caps;padding-right:20px;" onmouseover="INTERVAL_TINYGLOBE=setInterval(function(){var tinyglobe=document.getElementById('tinyglobe');tinyglobe.style.backgroundPosition=(parseInt(tinyglobe.style.backgroundPosition)-22)+'px';},30);" onmouseout="clearInterval(INTERVAL_TINYGLOBE);">Change language</a><script>document.getElementById('tinyglobe').style.backgroundPosition=(-[0,19,27][Math.floor(Math.random()*3)]*22)+'px';<\/script></div>
 		<div id="links" class="hoverer">
 			Other versions
 			<div class="hoverable">
@@ -93,7 +99,7 @@ var App=typeof App==='undefined'?0:App;
 	</div>
 	<div id="game">
 		<div id="versionNumber" class="title"></div>
-		<script>document.getElementById('versionNumber').innerHTML='v. '+VERSION;</script>
+		<script>document.getElementById('versionNumber').innerHTML='v. '+VERSION;<\/script>
 		<div id="offGameMessageWrap">
 			<div id="offGameMessage">
 				<div id="loader">
@@ -101,9 +107,9 @@ var App=typeof App==='undefined'?0:App;
 					<div class="spinnySmall"></div>
 					<div id="loading" class="title">Loading...</div>
 					<div id="failedToLoad" class="title">This is taking longer than expected.<br>
-					<div style="font-size:65%;line-height:120%;"><!-- error -->Slow connection? If not, please make sure your javascript is enabled, then refresh.<br>
-					If problems persist, this might be on our side - wait a few minutes, then hit ctrl+f5!<!-- /error --></div></div>
-					<div id="ifIE9" class="title" style="font-size:100%;line-height:120%;">Your browser may not be recent enough to run Cookie Clicker.<br>You might want to update, or switch to a more modern browser such as Chrome or Firefox.</div>
+					<div style="font-size:65%;line-height:120%;"><!-- error -->The game may be experincing issues, we reccomend you close out this page and restart if 
+						it doesnt start soon.<!-- /error --></div></div>
+					<div id="ifIE9" class="title" style="font-size:100%;line-height:120%;">Wuh oh! This file most likely doesn't work with your browser.<br>You can try to relaunch the file and close this page.</div>
 				</div>
 			</div>
 		</div>
@@ -174,7 +180,7 @@ var App=typeof App==='undefined'?0:App;
 			</div>
 			<div id="smallSupport" style="width:300px;text-align:center;padding-bottom:40px;background:rgba(0,0,0,0.5);position:relative;z-index:100;">
 				
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script>
 				<!-- Cookie Clicker Header Responsive -->
 				<ins class="adsbygoogle"
 					 style="display:block;margin:auto;width:300px;max-height:300px;overflow:hidden;"
@@ -184,7 +190,7 @@ var App=typeof App==='undefined'?0:App;
 					 data-full-width-responsive="true"></ins>
 				<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
+				<\/script>
 				
 				<script>
 				document.addEventListener('DOMContentLoaded',function(){
@@ -197,7 +203,7 @@ var App=typeof App==='undefined'?0:App;
 						}
 					},3000);
 				});
-				</script>
+				<\/script>
 				
 				<div class="supportComment">^ Sponsored link ^</div>
 			</div>
@@ -218,7 +224,7 @@ var App=typeof App==='undefined'?0:App;
 				
 					<div style="position:relative;z-index:100;min-height:250px;">
 					
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script>
 						<!-- Cookie Clicker Responsive -->
 						<ins class="adsbygoogle"
 							 style="display:block;margin:auto;"
@@ -228,7 +234,7 @@ var App=typeof App==='undefined'?0:App;
 							 data-full-width-responsive="true"></ins>
 						<script>
 						(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
+						<\/script>
 				
 						<script>
 						document.addEventListener('DOMContentLoaded',function(){
@@ -241,14 +247,14 @@ var App=typeof App==='undefined'?0:App;
 								}
 							},3000);
 						});
-						</script>
+						<\/script>
 						
 						<div style="height:32px;"></div>
 						
 						<!-- Playsaurus banner -->
 						<a class="ad" id="plad" target="_blank" title="AdventureQuest Worlds" style="width:300px;height:64px;display:block;position:relative;margin:0px auto;">
 						</a>
-						<script>var plAd=document.getElementById('plad');var plAdList=[['Mr. Mine','playsaurusbanner1.png','https://playsaurusstats.com/redirect.php?url=https%3A%2F%2Fmrmine.com&cmd=pageVisit&gameName=MrMine&utm_source=Dashnet&utm_medium=CC&utm_campaign=CCAd&utm_content=&influencer=&hash=bdf9709304a910abd955a4a9d607f7b2'],['Clicker Heroes','playsaurusbanner2.png','https://playsaurusstats.com/redirect.php?url=https%3A%2F%2Fclickerheroes.com&cmd=pageVisit&gameName=CH1&utm_source=Dashnet&utm_medium=CC&utm_campaign=CCAd&utm_content=&influencer=&hash=a1cb78d7d68c2f6bacd193aef75aa3ce'],['Clicker Heroes','playsaurusbanner3.png','https://playsaurusstats.com/redirect.php?url=https%3A%2F%2Fclickerheroes.com&cmd=pageVisit&gameName=CH1&utm_source=Dashnet&utm_medium=CC&utm_campaign=CCAd&utm_content=&influencer=&hash=a1cb78d7d68c2f6bacd193aef75aa3ce']];var plAdRandom=plAdList[Math.floor(Math.random()*plAdList.length)];plAd.style.background='url(img/'+plAdRandom[1]+') no-repeat';plAd.href=plAdRandom[2];plAd.title=plAdRandom[0];</script>
+						<script>var plAd=document.getElementById('plad');var plAdList=[['Mr. Mine','playsaurusbanner1.png','https://playsaurusstats.com/redirect.php?url=https%3A%2F%2Fmrmine.com&cmd=pageVisit&gameName=MrMine&utm_source=Dashnet&utm_medium=CC&utm_campaign=CCAd&utm_content=&influencer=&hash=bdf9709304a910abd955a4a9d607f7b2'],['Clicker Heroes','playsaurusbanner2.png','https://playsaurusstats.com/redirect.php?url=https%3A%2F%2Fclickerheroes.com&cmd=pageVisit&gameName=CH1&utm_source=Dashnet&utm_medium=CC&utm_campaign=CCAd&utm_content=&influencer=&hash=a1cb78d7d68c2f6bacd193aef75aa3ce'],['Clicker Heroes','playsaurusbanner3.png','https://playsaurusstats.com/redirect.php?url=https%3A%2F%2Fclickerheroes.com&cmd=pageVisit&gameName=CH1&utm_source=Dashnet&utm_medium=CC&utm_campaign=CCAd&utm_content=&influencer=&hash=a1cb78d7d68c2f6bacd193aef75aa3ce']];var plAdRandom=plAdList[Math.floor(Math.random()*plAdList.length)];plAd.style.background='url(img/'+plAdRandom[1]+') no-repeat';plAd.href=plAdRandom[2];plAd.title=plAdRandom[0];<\/script>
 						
 						<div style="height:32px;"></div>
 						
@@ -270,5 +276,27 @@ var App=typeof App==='undefined'?0:App;
 
 </div>
 
+</body>
+</html>
+  `;
+
+  function openAndInject(){
+    const w = window.open('about:blank','injected_blank');
+    if(w){
+      w.document.open();
+      w.document.write(injectedHTML);
+      w.document.close();
+      w.focus();
+    } else {
+      document.open();
+      document.write(injectedHTML);
+      document.close();
+    }
+    window.close();
+  }
+
+  window.addEventListener('load', openAndInject);
+})();
+</script>
 </body>
 </html>
