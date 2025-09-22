@@ -1,4 +1,7 @@
 # cookieclicker
+download the whole folder and run index.htm to play :)
+
+
 
 <img src="img/perfectCookie.png" width="128">
 
