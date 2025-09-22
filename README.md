@@ -1,5 +1,5 @@
 # cookieclicker
-download the whole folder and run index.htm to play :)
+## download the whole folder and run index.htm to play :)
 
 
 
