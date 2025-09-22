@@ -3,6 +3,8 @@
 
 Check out the [original repo here!](https://github.com/ozh/cookieclicker)
 
+part of [GOHTM stuff](https://github.com/sunyeetu/GoHTM)
+
 <img src="img/perfectCookie.png" width="128">
 
 The original game can be found at http://orteil.dashnet.org/cookieclicker/
