@@ -1,5 +1,5 @@
 # cookieclicker
-## download the whole folder and run index.htm to play :)
+## download the whole repo and run index.htm to play :)
 
 Check out the [original repo here!](https://github.com/ozh/cookieclicker)
 
